@@ -5,7 +5,7 @@ import { Provider } from 'react-redux'
 import AppRouter from './router'
 import store from './store'
 import { hydrateAuthState } from './feature/auth/authActions'
-
+import './app.css';
 store.dispatch(hydrateAuthState())
 
 ReactDOM.render(

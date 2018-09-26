@@ -13,7 +13,7 @@ export default WrappedComponent => {
             )
 
             const postLoginUri = window.location.pathname.startsWith('/login')
-                ? '/'
+                ? '/seekret'
                 : window.location.pathname
             const encodedPostLoginUri = encodeURIComponent(postLoginUri)
 

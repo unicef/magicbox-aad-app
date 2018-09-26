@@ -8,28 +8,26 @@ const Navbar = ({ isLoggedIn = false, logout }) =>
                 <Link to="/">Home</Link>
             </li>
             <li>
-                <Link to="/seekret">Seekret</Link>
+                <Link to="/seekret">Map</Link>
             </li>
-        </ul>
+
 
         {!isLoggedIn &&
-            <ul>
+
                 <li>
                     <Link to="/login">Login</Link>
                 </li>
-            </ul>}
+            }
 
         {isLoggedIn &&
-            <ul>
-                <li>
-                    <Link to="/s00per-seekret">S00per Seekret page</Link>
-                </li>
+
                 <li>
                     <a href="" role="button" onClick={() => logout()}>
                         Logout
                     </a>
                 </li>
-            </ul>}
+}
+                    </ul>
     </div>
 
 export default Navbar

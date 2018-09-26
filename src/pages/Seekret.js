@@ -4,8 +4,7 @@ import securePage from '../hocs/securePage'
 
 const SeekretPage = () =>
     <div>
-        This is the super seekret page that can only be accessed by
-        authenticated users!
+      <iframe src="http://localhost:8080/#/" frameborder='0' width='100%' height='1000px'></iframe>
     </div>
 
 export default securePage(defaultPage(SeekretPage))
